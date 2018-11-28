@@ -5,9 +5,9 @@ epicsEnvSet("EVR", "$(DEVICE)")
 epicsEnvSet("CHIC_SYS", "LabS-Utgard-VIP:")
 epicsEnvSet("CHOP_DRV", "Chop-Drv-01")
 epicsEnvSet("CHIC_DEV", "TS-$(DEVICE)")
-
-epicsEnvSet("E3_MODULES", "/home/root/vip/epics/iocs/e3")
-epicsEnvSet("EPICS_CMDS", "/home/root/vip/epics/iocs/cmds")
+epicsEnvSet("MRF_HW_DB", "evr-pcie-300dc-ess.db")
+epicsEnvSet("E3_MODULES", "/home/root/epics/iocs/e3")
+epicsEnvSet("EPICS_CMDS", "/home/root/epics/iocs/cmds")
 
 < "$(EPICS_CMDS)/mrfioc2-common/st.evr.cmd"
 
