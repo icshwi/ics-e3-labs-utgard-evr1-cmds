@@ -9,6 +9,13 @@ epicsEnvSet("MRF_HW_DB", "evr-pcie-300dc-ess.db")
 epicsEnvSet("E3_MODULES", "/home/root/epics/iocs/e3")
 epicsEnvSet("EPICS_CMDS", "/home/root/epics/iocs/cmds")
 
+######## Temporary until chopper group ###########
+######## changes PV names              ###########
+epicsEnvSet("NCG_SYS", "LabS-VIP:")
+# Change to 01a: to avoid conflict with EVR2 names
+epicsEnvSet("NCG_DRV", "Chop-Drv-01a:")
+##################################################
+
 < "$(EPICS_CMDS)/mrfioc2-common/st.evr.cmd"
 
 # Set delay compensation target. This is required even when delay compensation
